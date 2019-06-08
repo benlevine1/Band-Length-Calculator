@@ -1,2 +1,3 @@
 # Band-Length-Calculator
-App for calculating speargun band length
+Basic  for calculating speargun band length written with Javascript.
+Styled with Bootstrap.
