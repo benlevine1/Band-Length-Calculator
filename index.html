@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="jquery-3.4.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="main.js"></script>
   <title>Band Length Calculator</title>
 </head>
 <body>
+  <h1>Speargun Band Length Calculator</h1>
   <form action="">
-    Measure from band slot to tab on which the band will be loaded and input below:</br>
-    <input class="length" type="text">in.</br>
-    <select name="percentage">
-      <option value="200">200%</option>
-      <option value="250">250%</option>
-      <option value="300">300%</option>
-      <option value="350" selected>350%(recommended)</option>
-      <option value="400">400%</option>
-    </select>
+    Measure from the middle of band slot on the gun to the furthest loading point and input below.</br>
+    <input id="length" type="number">in.</br>
+    <select class="mySelect" name="percentage">
+      <option value="2">200%</option>
+      <option value="2.5">250%</option>
+      <option value="3">300%</option>
+      <option value="3.5" selected>350%(recommended)</option>
+      <option value="4">400%</option>
+    </select></br>
+    Your total band length should be <input id="result" type="text">
+    <button id="calculate" type="button">Calculate Length</button>
   </form>
 </body>
 </html>
